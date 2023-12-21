@@ -17,12 +17,12 @@ class UserClass extends React.Component {
     //console.log(this.props.name + "Child Component Did Mount");
     // Api call
 
-    const data = await fetch("https://api.github.com/users/akshaymarch7");
-    const json = await data.json();
+    // const data = await fetch("https://github.com/SiddharthKalidas506");
+    // const json = await data.json();
 
-    this.setState({
-      userInfo: json,
-    });
+    // this.setState({
+    //   userInfo: json,
+    // });
 
     //console.log(json);
   }
@@ -36,17 +36,16 @@ class UserClass extends React.Component {
   }
 
   render() {
-    console.log(this.props.name + "Child Render");
+    // console.log(this.props.name + "Child Render");
 
-    const { name, location, avatar_url } = this.state.userInfo;
-    return (
-      <div className="user-card">
-        <img src={avatar_url} />
-        <h2>Name: {name}</h2>
-        <h3>Location: {location}</h3>
-        <h4>Contact: @akshaymarch7</h4>
-      </div>
-    );
+    // const { name, location, avatar_url } = this.state.userInfo;
+    // return (
+    //   <div className="user-card">
+    //     <img src={avatar_url} />
+    //     <h2>Name: {name}</h2>
+    //     <h3>Location: {location}</h3>
+    //   </div>
+    // );
   }
 }
 
